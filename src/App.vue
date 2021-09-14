@@ -7,9 +7,10 @@
       dark
       dense
     >
-      <v-app-bar-title>Adam Mattioli's Personal Website</v-app-bar-title>
-      <v-spacer></v-spacer>
+      <v-app-bar-title>AFM.io</v-app-bar-title>
+      
 
+    <v-flex>
       <v-btn
         color="white"
         text
@@ -49,8 +50,9 @@
       >
         <span class="mlr-3">Contact Me</span>
       </v-btn>
+    </v-flex>
 
-      <v-spacer></v-spacer>
+      
 
       <v-btn
         href="https://github.com/amattioli7"
@@ -99,4 +101,5 @@
     }
   }
 }
+
 </style>
