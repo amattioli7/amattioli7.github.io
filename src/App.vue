@@ -2,11 +2,11 @@
   <v-app>
     <v-app-bar
       app
-      color="black"
+      dark
       dense
     >
 
-      <v-toolbar-title color="white">Adam Mattioli's Personal Website</v-toolbar-title>
+      <v-app-bar-title>Adam Mattioli's Personal Website</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
