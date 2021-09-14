@@ -1,88 +1,32 @@
 <template>
-  <v-app>
-    
-    <v-app-bar
-      app
-      dark
-      dense
-    >
-      <v-app-bar-title>Adam Mattioli's Personal Website</v-app-bar-title>
-      <v-spacer></v-spacer>
-
-      <v-btn
-        color="white"
-        text
-      >
-        <span class="mlr-3">Home</span>
-      </v-btn>
-
-      <v-text>|</v-text>
-
-      <v-btn
-        color="white"
-        text
-      >
-        <span class="mlr-3">About Me</span>
-      </v-btn>
-
-      <v-text>|</v-text>
-
-      <v-btn
-        color="white"
-        text
-      >
-        <span class="mlr-3">Resume</span>
-      </v-btn>
-
-      <v-text>|</v-text>
-
-      <v-btn
-        color="white"
-        text
-      >
-        <span class="mlr-3">Blog</span>
-      </v-btn>
-
-      <v-text>|</v-text>
-
-      <v-btn
-        color="white"
-        text
-      >
-        <span class="mlr-3">Contact Me</span>
-      </v-btn>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/amattioli7"
-        target="_blank"
-        color="white"
-        text
-      >
-        <span class="mr-2">Check out my GitHub Repository!</span>
-        <v-icon color="white">mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <Home/>
-    </v-main>
-  </v-app>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>
 </template>
 
-<script>
-import Home from './components/Home';
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-export default {
-  name: 'App',
+#nav {
+  padding: 30px;
 
-  components: {
-    Home,
-  },
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-  data: () => ({
-    //
-  }),
-};
-</script>
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+</style>
