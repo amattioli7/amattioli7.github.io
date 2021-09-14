@@ -6,7 +6,7 @@
       dense
     >
 
-      <v-app-bar-title>Adam Mattioli's Personal Website</v-toolbar-title>
+      <v-app-bar-title>Adam Mattioli's Personal Website</v-app-bar-title>
 
       <v-spacer></v-spacer>
 
