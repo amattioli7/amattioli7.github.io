@@ -4,15 +4,11 @@
     
     <v-app-bar
       app
-      dark
-      dense
     >
-      <v-app-bar-title>AFM.io</v-app-bar-title>
       
-
     <v-flex>
       <v-btn
-        color="white"
+        color="primary"
         text
         to="/"
       >
@@ -20,7 +16,7 @@
       </v-btn>
 
       <v-btn
-        color="white"
+        color="primary"
         text
         to="/about"
       >
@@ -28,7 +24,7 @@
       </v-btn>
 
       <v-btn
-        color="white"
+        color="primary"
         text
         to="/resume"
       >
@@ -36,7 +32,7 @@
       </v-btn>
 
       <v-btn
-        color="white"
+        color="primary"
         text
         to="/blog"
       >
@@ -44,7 +40,7 @@
       </v-btn>
 
       <v-btn
-        color="white"
+        color="primary"
         text
         to="/contact"
       >
@@ -57,8 +53,8 @@
       <v-btn
         href="https://github.com/amattioli7"
         target="_blank"
-        color="white"
-        text
+        color="primary"
+        
       >
         <span class="mr-2">Check out my GitHub Repository!</span>
         <v-icon color="white">mdi-open-in-new</v-icon>

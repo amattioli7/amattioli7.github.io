@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <v-flex class="resume">
     <h1>Resume:</h1>
-  </div>
+  </v-flex>
 </template>
