@@ -6,7 +6,7 @@
       app
     >
       
-    <v-flex>
+    <v-flex justify-center>
       <v-btn
         color="primary"
         text
@@ -46,10 +46,10 @@
       >
         <span class="mlr-3">Contact Me</span>
       </v-btn>
+    
     </v-flex>
-
       
-
+      <!--
       <v-btn
         href="https://github.com/amattioli7"
         target="_blank"
@@ -59,6 +59,7 @@
         <span class="mr-2">Check out my GitHub Repository!</span>
         <v-icon color="white">mdi-open-in-new</v-icon>
       </v-btn>
+      -->
     </v-app-bar>
 
   <div id="app">
