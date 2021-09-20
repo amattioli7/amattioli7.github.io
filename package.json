@@ -9,6 +9,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
+    "@vue/composition-api": "^1.1.5",
     "core-js": "^3.6.5",
     "emailjs-com": "^3.2.0",
     "vue": "^2.6.11",
