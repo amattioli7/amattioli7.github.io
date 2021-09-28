@@ -1,58 +1,60 @@
 <template>
-<v-layout
-align-center
-justify-center
->
-  <div class="contact">
-    <h1 class="mt-4">Contact Me:</h1>
 
-    <v-spacer class="mb-4"></v-spacer>
+  <v-layout
+    align-center
+    justify-center
+  >
+    <div class="contact">
+      <h1 class="mt-4" id="contactMe">Contact Me:</h1>
 
-    <v-card
-      ref="form"
-      min-width="600px"
-    >
+      <v-spacer class="mb-4"></v-spacer>
 
-      <v-card-text>
-        <v-text-field
-        ref="name"
-        placeholder="Name"
-        clearable
-        clear-icon="mdi-close-circle"
-        >
-        </v-text-field>
+      <v-card
+        ref="form"
+        min-width="600px"
+      >
 
-        <v-text-field
-        ref="email"
-        placeholder="Email Address"
-        clearable
-        clear-icon="mdi-close-circle"
-        >
-        </v-text-field>
+        <v-card-text>
+          <v-text-field
+          ref="name"
+          placeholder="Name"
+          clearable
+          clear-icon="mdi-close-circle"
+          >
+          </v-text-field>
 
-        <v-text-field
-        ref="subject"
-        placeholder="Subject"
-        clearable
-        clear-icon="mdi-close-circle"
-        >
-        </v-text-field>
+          <v-text-field
+          ref="email"
+          placeholder="Email Address"
+          clearable
+          clear-icon="mdi-close-circle"
+          >
+          </v-text-field>
 
-        <v-textarea
-        ref="message"
-        placeholder="Message"
-        maxlength="500"
-        clearable
-        clear-icon="mdi-close-circle"
-        >
-        </v-textarea>
+          <v-text-field
+          ref="subject"
+          placeholder="Subject"
+          clearable
+          clear-icon="mdi-close-circle"
+          >
+          </v-text-field>
 
-      </v-card-text>
-        
-    </v-card>
+          <v-textarea
+          ref="message"
+          placeholder="Message"
+          maxlength="500"
+          clearable
+          clear-icon="mdi-close-circle"
+          >
+          </v-textarea>
 
-  </div>
-</v-layout>
+        </v-card-text>
+          
+      </v-card>
+
+    </div>
+  </v-layout>
+
 </template>
 
 <script>
@@ -64,3 +66,12 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+
+  #contactMe{
+    color: white;
+  }
+</style>
+
+<!-- background-image: url("../assets/mc.jpg"); -->
