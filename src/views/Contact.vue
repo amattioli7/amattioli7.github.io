@@ -49,6 +49,12 @@
           </v-textarea>
 
         </v-card-text>
+
+          <v-btn
+            class="mb-4"
+            @click="sendEmail()">
+            SEND
+          </v-btn>
           
       </v-card>
 
@@ -59,11 +65,44 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
 
 export default defineComponent({
   setup() {
     
   },
+  
+  methods: {
+    sendEmail(){
+
+      var data = {
+        service_id: 'service_0vaf75q',
+        template_id: 'template_o9kklme',
+        user_id: 'user_8ty7iCF1VLUoYxPSqDXaQ',
+        template_params: {
+          user_name: 'Test User Name',
+          user_email: 'testUserEmail@test.com',
+          subject: 'This is a test subject',
+          message: 'Hello Adam! This is a test message!',
+        }
+      }
+
+      Vue.axios.post('https://api.emailjs.com/api/v1.0/email/send', 
+      data)
+      .then(function (response){
+        console.log(response)
+      })
+      .catch(function (error){
+        console.log(error.response)
+      })
+    
+    },
+  }
+
 })
 </script>
 
@@ -72,6 +111,7 @@ export default defineComponent({
   #contactMe{
     color: white;
   }
+
 </style>
 
 <!-- background-image: url("../assets/mc.jpg"); -->
