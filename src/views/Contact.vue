@@ -16,6 +16,7 @@
 
         <v-card-text>
           <v-text-field
+          v-model="name"
           ref="name"
           placeholder="Name"
           clearable
@@ -24,6 +25,7 @@
           </v-text-field>
 
           <v-text-field
+          v-model="email"
           ref="email"
           placeholder="Email Address"
           clearable
@@ -32,6 +34,7 @@
           </v-text-field>
 
           <v-text-field
+          v-model="subject"
           ref="subject"
           placeholder="Subject"
           clearable
@@ -40,6 +43,7 @@
           </v-text-field>
 
           <v-textarea
+          v-model="message"
           ref="message"
           placeholder="Message"
           maxlength="500"
@@ -75,6 +79,15 @@ export default defineComponent({
   setup() {
     
   },
+
+  data() {
+    return{
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    }
+  },
   
   methods: {
     sendEmail(){
@@ -84,13 +97,15 @@ export default defineComponent({
         template_id: 'template_o9kklme',
         user_id: 'user_8ty7iCF1VLUoYxPSqDXaQ',
         template_params: {
-          user_name: 'Test User Name',
-          user_email: 'testUserEmail@test.com',
-          subject: 'This is a test subject',
-          message: 'Hello Adam! This is a test message!',
+          user_name: this.name,
+          user_email: this.email,
+          subject: this.subject,
+          message: this.message,
         }
       }
 
+      //console.log(data)
+      
       Vue.axios.post('https://api.emailjs.com/api/v1.0/email/send', 
       data)
       .then(function (response){
