@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["resume"],{"1ba2":function(e,s,t){"use strict";t.r(s);var n=function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("v-flex",{staticClass:"resume"},[t("h1",{staticClass:"mt-4"},[e._v("Resume:")])])},a=[],l=t("2877"),u=t("6544"),c=t.n(u),r=t("0e8f"),i={},o=Object(l["a"])(i,n,a,!1,null,null,null);s["default"]=o.exports;c()(o,{VFlex:r["a"]})}}]);
+//# sourceMappingURL=resume.3dcb73ac.js.map
