@@ -1,13 +1,14 @@
 <template>
+<v-container
+  fill-height
+>
 
   <v-layout
     align-center
     justify-center
   >
-    <div class="contact">
-      <h1 class="mt-4" id="contactMe">Contact Me:</h1>
 
-      <v-spacer class="mb-4"></v-spacer>
+    <div>
 
       <v-card
         ref="form"
@@ -15,6 +16,9 @@
       >
 
         <v-card-text>
+
+          <h1 class="mt-2 contactMe">Contact Me:</h1>
+
           <v-text-field
           v-model="name"
           ref="name"
@@ -64,7 +68,7 @@
 
     </div>
   </v-layout>
-
+</v-container>
 </template>
 
 <script>
@@ -123,10 +127,8 @@ export default defineComponent({
 
 <style>
 
-  #contactMe{
-    color: white;
+  .contactMe{
+    color: rgb(0, 4, 71);
   }
 
 </style>
-
-<!-- background-image: url("../assets/mc.jpg"); -->
